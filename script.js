@@ -297,3 +297,8 @@ reset.addEventListener('click', function(){
     univ.disabled = false;
     numbers.disabled = false;
 });
+
+//disable right click
+window.addEventListener('contextmenu', function (e) { 
+    e.preventDefault(); 
+  }, false);
