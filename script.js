@@ -18,10 +18,10 @@ univ.addEventListener('change', () => {
         document.querySelector(".grade-choice").className = "grade-choice-visible";
     }
     else if (univType == "3" || univType== "6"){
-        document.querySelector(".type-output").innerHTML = "Enter Percentage(%) Grade";
+        document.querySelector(".type-output").innerHTML = "퍼센트(%) 점수를 입력하세요.";
     }
     else if (univType == "7" || univType== "8" || univType == "9"){
-        document.querySelector(".type-output").innerHTML = "Enter Alphabetical(ABC) Grade";
+        document.querySelector(".type-output").innerHTML = "알파벳(ABC) 점수를 입력하세요.";
     }
     univ.disabled = true;
 });
@@ -130,12 +130,12 @@ convert.addEventListener('click', function(){
             }
             let creditVal = parseInt(item.nextElementSibling.value);
             item.parentNode.innerHTML = 
-            '<div class="indiv-gpa"> &#8226 ' + item.value.toUpperCase() + ' is ' +gpa.toFixed(2) + ' in GPA grade' +'</div>';
+            '<div class="indiv-gpa"> &#8226 ' + item.value.toUpperCase() + '는 GPA 점수로 ' +gpa.toFixed(2) + '입니다.' +'</div>';
             num += creditVal;
             total += gpa * creditVal;
         });
         let avg = (total / num).toFixed(2);
-        document.getElementById('output').innerHTML = 'Your average GPA is <div class="gpatext">' + avg;
+        document.getElementById('output').innerHTML = '평균 GPA 점수는 <div class="gpatext">' + avg + '</div>입니다.';
     }
     function calc_pct3(){
         document.querySelectorAll(".grade").forEach((item)=>{
@@ -180,12 +180,12 @@ convert.addEventListener('click', function(){
             }            
             let creditVal = parseInt(item.nextElementSibling.value);
             item.parentNode.innerHTML = 
-            '<div class="indiv-gpa">' + item.value.toUpperCase() + '% is ' +gpa.toFixed(2) + ' in GPA grade' +'</div>';
+            '<div class="indiv-gpa"> &#8226 ' + item.value.toUpperCase() + '는 GPA 점수로 ' +gpa.toFixed(2) + '입니다.' +'</div>';
             num += creditVal;
             total += gpa * creditVal;
         });
         let avg = (total / num).toFixed(2);
-        document.getElementById('output').innerHTML = 'Your average GPA is <div class="gpatext">' + avg;
+        document.getElementById('output').innerHTML = '평균 GPA 점수는 <div class="gpatext">' + avg + '</div>입니다.';
     }
     function calc_pct4(){
         document.querySelectorAll(".grade").forEach((item)=>{
@@ -230,12 +230,12 @@ convert.addEventListener('click', function(){
             }            
             let creditVal = parseInt(item.nextElementSibling.value);
             item.parentNode.innerHTML = 
-            '<div class="indiv-gpa">' + item.value.toUpperCase() + ' is ' +gpa.toFixed(2) + '% in GPA grade' +'</div>';
+            '<div class="indiv-gpa"> &#8226 ' + item.value.toUpperCase() + '는 GPA 점수로 ' +gpa.toFixed(2) + '입니다.' +'</div>';
             num += creditVal;
             total += gpa * creditVal;
         });
         let avg = (total / num).toFixed(2);
-        document.getElementById('output').innerHTML = 'Your average GPA is <div class="gpatext">' + avg;
+        document.getElementById('output').innerHTML = '평균 GPA 점수는 <div class="gpatext">' + avg + '</div>입니다.';
     }
     function calc_pct6(){
         document.querySelectorAll(".grade").forEach((item)=>{
@@ -271,12 +271,12 @@ convert.addEventListener('click', function(){
             }            
             let creditVal = parseInt(item.nextElementSibling.value);
             item.parentNode.innerHTML = 
-            '<div class="indiv-gpa">' + item.value.toUpperCase() + ' is ' +gpa.toFixed(2) + '% in GPA grade' +'</div>';
+            '<div class="indiv-gpa"> &#8226 ' + item.value.toUpperCase() + '는 GPA 점수로 ' +gpa.toFixed(2) + '입니다.' +'</div>';
             num += creditVal;
             total += gpa * creditVal;
         });
         let avg = (total / num).toFixed(2);
-        document.getElementById('output').innerHTML = 'Your average GPA is <div class="gpatext">' + avg;
+        document.getElementById('output').innerHTML = '평균 GPA 점수는 <div class="gpatext">' + avg + '</div>입니다.';
     }
     document.querySelector(".type-output").innerHTML = '';
 });
