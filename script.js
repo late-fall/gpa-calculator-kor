@@ -75,7 +75,7 @@ convert.addEventListener('click', function(){
             }
             break;
         default:
-            alert('Error!');
+            break;
     }
 
     function calc_alpha(){
