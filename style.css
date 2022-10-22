@@ -1,0 +1,198 @@
+html {
+    height: 100%;
+    text-align: center;
+}
+body{
+    background: linear-gradient(to right, #05386B, #18426d);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+}
+.type-output{
+    color: #fff;
+    font-size: 20px;
+}
+.wrapper{
+    margin-top: 200px;
+    margin-bottom: 100px;
+    background: #022140;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: rgb(47, 100, 156) 0px 20px 30px -10px;
+    line-height: 45px;
+    font-size: 28px;
+    max-width: 420px;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+select{
+    outline: none;
+}
+select:focus {
+    background-color: #265077;
+}
+#univ-type{
+    margin-bottom: 20px;
+}
+#course-numbers{
+    margin-bottom: 20px;
+}
+#convert-btn, #reset-btn{
+    color: white;
+    padding: 12px;
+    border: 1px solid white;
+    background: none;
+    cursor: pointer;
+    width: 120px;
+    font-size: 20px;
+    font-weight: 700;
+}
+#convert-btn:hover, #reset-btn:hover{
+    background-color: #265077;
+}
+#convert-btn:active,  #add-btn:active, #reset-btn:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+.grade {
+    width: 75px;;
+    font-size: 25px;
+    text-align: center;
+}
+.grade-row {
+    display: flex;
+    margin-bottom: 15px;
+}
+.grade-choice {
+    display: none;
+}
+.grade-choice-visible {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+select {
+  background-color: #1E4258;
+  color: white;
+  padding: 12px;
+  width: 300px;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+  border-radius: 8px;
+  width: 100%;
+}
+
+select option {
+    padding: 30px;
+}
+
+.credit {
+    margin-left: 20px;
+    width: 280px;
+}
+.buttons {
+    display: flex;
+    justify-content:space-between;
+    gap: 20px;
+}
+input[type="radio"]{
+    display: none;
+}
+
+input[name="grade-type"]+label {
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: #1E4258;
+    width: 200px;
+    border: none;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    width: 180px ;
+}
+
+input[name="credit"]+label {
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: #1E4258;
+    width: 120px;
+    border: none;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    padding: 5px;
+}
+#fullcourse:checked + label,
+#halfcourse:checked + label{
+    background-color: #265077;
+}
+
+
+#percent:checked + label,
+#alpha:checked + label{
+    background-color: #265077;
+}
+.indiv-gpa{
+    margin-left: 20px;
+}
+h1{
+    font-size: 45px;
+    margin: 0;
+}
+.gpatext{
+    color: #15DB95;
+    font-weight: 700;
+    font-size: 32px;
+}
+footer {
+    margin-top: 30px;;
+    margin-bottom: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #022140;
+}
+
+footer p{
+    font-size: 15px;
+    margin: 0;
+    line-height: 120%;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 80px;
+    height: auto;
+    object-fit:scale-down;
+}

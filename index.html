@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA 계산기</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+            <h1>GPA 계산기</h1>
+            <img src="./assets/grades.png" alt="grade icon">
+        </div>
+            <select id="univ-type">
+                <option value="none">대학교를 선택해주세요.</option>
+                <option value="7">Acadia</option>
+                <option value="7">Alberta</option>
+                <option value="3">Algoma</option>
+                <option value="7">Athabasca</option>
+                <option value="3">Bishop's</option>
+                <option value="7">Brandon</option>
+                <option value="3">Brock</option>
+                <option value="7">Calgary</option>
+                <option value="3">Cape Breton</option>
+                <option value="7">Carleton</option>
+                <option value="7">Concordia</option>
+                <option value="37">Dalhousie</option>
+                <option value="3">Guelph</option>
+                <option value="3">Lakehead</option>
+                <option value="7">Laurentian</option>
+                <option value="7">Laval</option>
+                <option value="7">Lethbridge</option>
+                <option value="9">Manitoba</option>
+                <option value="8">McGill</option>
+                <option value="7">McMaster</option>
+                <option value="6">Memorial</option>
+                <option value="7">Moncton</option>
+                <option value="7">Montreal</option>
+                <option value="7">Mt. Allison</option>
+                <option value="7">Mt. Royal</option>
+                <option value="7">Mt. St. Vincent</option>
+                <option value="7">New Brunswick</option>
+                <option value="3">Nipissing</option>
+                <option value="3">OCAD</option>
+                <option value="7">Ontario Tech</option>
+                <option value="7">Ottawa</option>
+                <option value="3">Prince Edward Island</option>
+                <option value="7">Quebec</option>
+                <option value="37">Queen's</option>
+                <option value="8">Quest</option>
+                <option value="3">Regina</option>
+                <option value="47">RMC</option>
+                <option value="7">Royal Roads</option>
+                <option value="7">Ryerson</option>
+                <option value="3">Saskatchewan</option>
+                <option value="7">Sherbrooke</option>
+                <option value="7">Simon Fraser</option>
+                <option value="3">St. Francis Xavier</option>
+                <option value="7">St. Mary's</option>
+                <option value="7">St. Thomas</option>
+                <option value="7">Ste-Anne</option>
+                <option value="7">Thompson Rivers</option>
+                <option value="37">Toronto</option>
+                <option value="3">Trent</option>
+                <option value="7">Trinity Western</option>
+                <option value="7">UBC</option>
+                <option value="7">UNBC</option>
+                <option value="37">Victoria</option>
+                <option value="37">Waterloo</option>
+                <option value="3">Western</option>
+                <option value="7">Wilfrid Laurier</option>
+                <option value="37">Windsor</option>
+                <option value="7">Winnipeg</option>
+                <option value="9">York</option>
+            </select>
+
+        <div class="grade-choice" id="choice">
+            <input type="radio" name="grade-type" id="percent" value="pct">
+            <label for="percent">Percent (%) Grade</label>
+            <input type="radio" id="alpha" name="grade-type" value="alpha">
+            <label for="alpha">Alphabetical grade</label>
+        </div>
+
+
+        <div class="course-numbers">
+            <select id="course-numbers">
+                <option value="none">계산할 과목 개수</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                
+            </select>
+        </div>
+
+        <p class="type-output"></p>
+
+        <div class="row">
+            <div class="grade-row">
+                <input type="text" class="grade" placeholder="Grade" maxlength="3">
+                <select class="credit">
+                    <option value="2">6 credits (1 full course) </option>
+                    <option value="1">3 credits (1 half course) </option>
+                </select>
+            </div>
+        </div>
+        <p id="output"></p>
+        <div class="buttons">
+            <button id="convert-btn">계산하기</button>
+            <button id="reset-btn">처음부터</button>
+        </div>
+    </div>
+    <footer>
+        <p>GPA 계산은 <a href="https://www.ouac.on.ca/guide/omsas-conversion-table/">OUAC website</a>를 참조하였습니다.</p>
+        <p><a href="https://www.flaticon.com/free-icons/grade" title="grade icons">Grade icons created by Flat Icons - Flaticon</a></p>
+        <p>이상오 2022 <a href="https://github.com/late-fall/gpa-calculator"><i class="fa fa-github fa_custom"></i></a></p>
+    </footer>
+</body>
+</html>
