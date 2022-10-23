@@ -23,7 +23,7 @@ body{
     padding: 30px;
     box-shadow: rgb(47, 100, 156) 0px 20px 30px -10px;
     line-height: 45px;
-    font-size: 24px;
+    font-size: 22px;
     max-width: 420px;
 }
 
@@ -60,7 +60,7 @@ select:focus {
 }
 .grade {
     width: 50px;;
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
 }
 .grade-row {
@@ -160,7 +160,7 @@ input[name="credit"]+label {
     margin-left: 20px;
 }
 h1{
-    font-size: 38px;
+    font-size: 36px;
     margin: 0;
 }
 .gpatext{
@@ -193,11 +193,12 @@ footer p{
 .title {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
 img {
-    max-width: 80px;
+    max-width: 60px;
     height: auto;
     object-fit:scale-down;
 }
